@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prévision de gain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+    />
+    <link rel="shortcut icon" href="https://malik-dev.tech/logo.png" />
+  </head>
+  <body>
+    <header>
+      <a
+        href="https://malik-dev.tech"
+        class="logo"
+        style="font-family: 'Orbitron', sans-serif"
+        >&lt;M-DEV<span style="color: #cda45e">/</span
+        >&gt;<!--<span class="animate" style="--i: 1"></span
+      >--></a
+      >
+    </header>
+    <div class="container">
+      <h1>Algorithme de prévision de gain</h1>
+      <label for="montantInitial">Montant initial :</label>
+      <input type="number" id="montantInitial" />
+      <label for="montantFinal">Montant final souhaité :</label>
+      <input type="number" id="montantFinal" />
+      <label for="pourcentage">Taux de croissance journalier (%) :</label>
+      <input type="number" id="pourcentage" />
+      <button onclick="executerAlgorithme()">Exécuter</button>
+      <div id="resultat"></div>
+    </div>
+    <footer>
+      <p>Auteur de l'algorithme de calcul: BOTCHI CLAUDE EMMANUEL</p>
+      <p>Utilisé par : Malik-Dev</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

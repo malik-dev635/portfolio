@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  color: #fbfbfb;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #161b22;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #cda45e;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fbfbfb;
+}
+
+input[type="number"] {
+  width: calc(100% - 40px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #cda45e;
+  border-radius: 4px;
+  background-color: #161b22;
+  color: #fbfbfb;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #cda45e;
+  border-radius: 4px;
+  background-color: #161b22;
+  color: #fbfbfb;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #cda45e;
+  color: #0d1117;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cfaf76;
+}
+
+#resultat {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #cda45e;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #161b22;
+}
+
+table tr:nth-child(even) {
+  background-color: #161b22;
+}
+
+.logo {
+  position: relative;
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer {
+  background-color: #0d1117;
+  color: #fbfbfb;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}

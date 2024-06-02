@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcul du capital accumulé</title>
+    <link rel="stylesheet" href="style.css" id="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+    />
+    <link rel="shortcut icon" href="https://malik-dev.tech/logo.png" />
+  </head>
+  <body>
+    <header>
+      <a
+        href="https://malik-dev.tech"
+        class="logo"
+        style="font-family: 'Orbitron', sans-serif"
+        >&lt;M-DEV<span style="color: #cda45e">/</span
+        >&gt;<!--<span class="animate" style="--i: 1"></span
+      >--></a
+      >
+    </header>
+
+    <div class="container">
+      <h1>Calcul du capital accumulé</h1>
+      <label for="capitalInitial">Capital initial :</label>
+      <input type="number" id="capitalInitial" />
+      <label for="taux">Taux de croissance journalier (%) :</label>
+      <input type="number" id="taux" />
+      <label for="periode">Période en jours :</label>
+      <input type="number" id="periode" />
+      <button onclick="calculerCapital()">Calculer</button>
+      <p id="resultat"></p>
+    </div>
+
+    <footer>
+      <p>&copy;copyright 2024 créé par Malik-Dev</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

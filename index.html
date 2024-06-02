@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Portfolio Malik">
+    <meta property="og:description" content="Developpeur Fullstack">
+    <meta property="og:image" content="https://malik-dev.tech/logo.png">
+    <meta property="og:url" content="https://www.malik-dev.tech/index.php">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>Malik - Portfolio</title>
+    <link rel="shortcut icon" href="logo.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      /* Styles pour la modal */
+      .popup-container {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: #161b22;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+            border-radius: 20px;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor:pointer;
+        }
+
+        .popup-message {
+            margin-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.php" class="logo"
+        style="font-family: 'Orbitron', sans-serif;">&lt;M-DEV<span style="color: #cda45e;">/</span>&gt;<!--<span class="animate" style="--i: 1"></span
+      >--></a
+      >
+      <div class="bx bx-menu" id="menu-icon">
+        <span class="animate" style="--i: 2"></span>
+      </div>
+      <nav class="navbar">
+        <a href="#home" class="active">Accueil</a>
+        <a href="#About">Moi</a>
+        <a href="#Education">Parcours</a>
+        <a href="#Formation">Formation</a>
+        <a href="#Projet">Projets réalisés</a>
+        <a href="#Contact">Contact</a>
+
+        <span class="active-nav"></span>
+      </nav>
+    </header>
+
+    <section class="home show-animate" id="home">
+      <div class="home-content">
+        <h1>
+          <span  style="font-family: 'Orbitron', sans-serif;">Abdel-Malik</span
+          ><!--<span class="animate" style="--i:2;"></span>-->
+        </h1>
+        <div class="text-animate"> <!--class="text-animate"-->
+          <h3>Developpeur web et windows</h3>
+          <!--<span class="animate" style="--i: 3"></span>-->
+        </div>
+
+        <div class="btn-box">
+  <a href="mailto:abdelmalikkouadjo@gmail.com" class="btn">Engagez-moi</a>
+  <a href="tel:+2250506401931" class="btn">Parlons-en</a>
+</div>
+      </div>
+      <div class="home-sci">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="https://wa.me/2250704921080"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/in/malik-abdel/"><i class="bx bxl-linkedin"></i></a>
+        <!-- <span class="animate" style="--i: 6"></span>-->
+      </div>
+      <!---  <div class="home-imgHover"></div>-->
+      <!--<span class="animate home-img" style="--i: 7"></span>-->
+    </section>
+
+    <section class="about" id="About">
+      <h2 class="heading">
+        A propos de <span>Moi</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="about-img">
+        <img src="100007362.png" alt="" />
+        <span class="cercle"></span>
+        <span class="animate scroll" style="--i: 2"></span>
+      </div>
+      <div class="about-content">
+        <h3>
+          Developpeur Junior<span
+            class="animate scroll"
+            style="--i: 3"
+          ></span>
+        </h3>
+        <p>
+        Passionné par la création d'applications, mon aspiration est de perfectionner mes compétences pour marier un design élégant à des fonctionnalités robustes, dans le but d'offrir des expériences utilisateur exceptionnelles.
+          <span class="animate scroll" style="--i: 4"></span>
+        </p>
+        <div class="btn-box btns">
+          <a href="404.html" class="btn">Lire la suite</a>
+          <span class="animate scroll" style="--i: 5"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="Education">
+      <h2 class="heading">
+        Mon <span>Parcours</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">
+            Formation<span class="animate scroll" style="--i: 2"></span>
+          </h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2022 - 2023
+                </div>
+                <h3>BTS Informatique Developpeur d'Application - PIGIER</h3>
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+
+          <!--  <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2023 - 2024
+                </div>
+                <h3>Licence Professionnel Reseau et Génie Logiciel - PIGIER</h3>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  voluptatum nisi reprehenderit
+                </p>
+              </div>
+            </div>-->
+
+         <!--   <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2026 - 2028
+                </div>
+                <h3>Master ... - PIGIER</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  voluptatum nisi reprehenderit , debitis dicta a porro quas ab
+                  totam.
+                </p>
+              </div>
+            </div>-->
+            
+            <span class="animate scroll" style="--i: 3"></span>
+          </div>
+        </div>
+        <div class="education-column">
+          <h3 class="title">
+            Expérience<span class="animate scroll" style="--i: 5"></span>
+          </h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>  2023
+                </div>
+                <h3>Developpeur web</h3>
+                <p>
+                  J'ai acquis des compétences essentielles en développement web lors de cette période. J'ai travaillé sur la création de sites web, la conception d'interfaces conviviales et la résolution de problèmes techniques.</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2023
+                </div>
+                <h3>Maintenance Informatique</h3>
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+
+             <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i> 2023
+                </div>
+                <h3>Developpeur d'application windows</h3>
+                <p>
+                   j'ai eu l'opportunité de développer une application en VB.NET dédiée à la création de factures pour un particulier. Mon rôle m'a amené à relever divers défis passionnants, notamment la conception d'une interface utilisateur conviviale, l'intégration de fonctionnalités de génération de factures automatisées et la gestion des données financières.
+                </p>
+              </div>
+            </div>
+            <span class="animate scroll" style="--i: 6"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="Formation">
+      <h2 class="heading">
+        Mes <span>Compétences</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+      <div class="skills-row">
+        <div class="skills-column">
+          <h3 class="title">
+            Compétence en code<span
+              class="animate scroll"
+              style="--i: 2"
+            ></span>
+          </h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>HTML <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>CSS <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>JavaScript <span>40%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>PHP <span>60%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+            <span class="animate scroll" style="--i: 3"></span>
+          </div>
+        </div>
+
+        <div class="skills-column">
+          <h3 class="title">
+            Domaine d'Expertise<span
+              class="animate scroll"
+              style="--i: 5"
+            ></span>
+          </h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>Web design <span>50%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Developpement Web <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Developpement Windows VB.NET <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <!--<div class="progress">
+                <h3>Python <span>5%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>-->
+            </div>
+            <span class="animate scroll" style="--i: 6"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="Projet">
+    <h2 class="heading">
+        Mes <span> Projets</span
+        >
+      </h2>
+
+      <div class="project-carousel">
+    <div class="project-slide">
+    <div class="image-container">
+    <img src="sucresale.png" alt="SucréSalé Yamoussoukro">
+    </div>
+  
+  <h3>SucréSalé Yamoussoukro</h3>
+  <p>Le projet "SucréSalé Yamoussoukro" est un site Web complet créé pour un restaurant situé à Yamoussoukro. Ce projet englobait la conception de l'interface utilisateur, le développement frontend, la gestion du contenu et la mise en place d'un système de réservation en ligne. L'objectif était de créer une expérience en ligne immersive pour les clients du restaurant, en mettant en valeur le menu, les services et les avis des clients.</p>
+  <div class="btn-box btns">
+          <a href="https://www.sucrésalé-yamoussoukro.website" class="btn">Visitez le site</a>
+        </div>
+    </div>
+
+    <div class="project-slide">
+      <img src="projetvb.png" alt="Projet 2">
+      <h3>FacturaGenius</h3>
+      <p>FacturaGenius est un générateur de factures simple et intuitif conçu pour les petites entreprises et les travailleurs indépendants. Il permet de créer des factures professionnelles en quelques étapes faciles. Vous pouvez personnaliser le modèle de facture, ajouter des informations sur votre entreprise et vos clients, et générer des factures au format PDF prêtes à être envoyées. Simplifiez votre processus de facturation avec FacturaGenius.</p>
+      <div class="btn-box btns">
+          <a href="https://drive.google.com/file/d/1V8I8DijpfYl-jn4oLpBEUNW9K52Zgyn-/view?usp=sharing" class="btn">Télécharger</a>
+        </div>
+    </div>
+    
+    <div class="project-slide">
+      <img src="portfolio.png" alt="Projet 3">
+      <h3>M-Dev</h3>
+      <p>m-dev.tech est mon portfolio personnel en ligne. Il s'agit d'un site Web que j'ai créé pour présenter mes compétences en développement web, mes projets précédents et mes réalisations. Vous y trouverez des informations sur mes compétences techniques, mon parcours professionnel, ainsi que des liens vers des projets auxquels j'ai contribué. Explorez mon portfolio pour en savoir plus sur mon travail et mes capacités en développement web.</p>
+      <div class="btn-box btns">
+          <a href="https://www.malik-dev.tech" class="btn">Visitez le site</a>
+        </div>
+    </div>
+    <div class="project-slide">
+    <img src="tyv.png" alt="Projet 3">
+    <h3>TYV Consulting</h3>
+    <p>TVY Consulting est Cabinet de conseil offrant un accompagnement dans les projet d’études à l’étranger, la formation des travailleurs ainsi que les entreprises et ONG dans leurs recherches de financements et de partenariats.
+
+    </p>
+    <div class="btn-box btns">
+        <a href="https://tyv-consulting.com/" class="btn">Visitez le site</a>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+ 
+    </section>
+
+    <section class="contact" id="Contact">
+      <h2 class="heading">
+        Contactez <span>Moi!</span
+        ><span class="animate scroll" style="--i: 2"></span>
+      </h2>
+
+      <form id="contactForm" class="signin-form">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" name="name" id="name" placeholder="Nom" required />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" name="email" id="email" placeholder="Adresse E-mail" required />
+            <span class="focus"></span>
+          </div>
+          <span class="animate scroll" style="--i: 3"></span>
+        </div>
+    
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" name="number" id="number" placeholder="Numéro de téléphone" required />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" name="objet" id="objet" placeholder="Objet" required />
+            <span class="focus"></span>
+          </div>
+          <span class="animate scroll" style="--i: 5"></span>
+        </div>
+    
+        <div class="textarea-field">
+          <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Votre message"></textarea>
+          <span class="focus"></span>
+          <span class="animate scroll" style="--i: 7"></span>
+        </div>
+    
+        <div class="btn-box btns">
+          <button type="submit" class="btn" id="envoyerButton">Envoyer</button>
+          <span class="animate scroll" style="--i: 9"></span>
+          
+        </div>
+        
+      </form>
+      
+      <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <div class="popup-message" id="popupMessage"></div>
+            <button onclick="closePopup()" style="padding: 10px 20px; background-color: #cda45e; color: #161b22; border: none; border-radius: 5px; cursor: pointer;">Fermer</button>
+
+        </div>
+    </div>
+
+    <script>
+        function openPopup(message) {
+            document.getElementById('popupMessage').innerHTML = message;
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+
+            fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => openPopup(data))
+            .catch(error => openPopup('Une erreur est survenue: ' + error));
+        });
+    </script>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 par Malik | Tous droits reservés</p>
+
+        
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+
+      
+      </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
